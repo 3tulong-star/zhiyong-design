@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>写评价 · 知用（设计样稿）</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="sample">设计样稿：表单不会真的提交。实际字段、登录与审核规则以现有项目为准</div>
+
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="index.html"><b>知用</b><span>AI 工具点评</span></a>
+    <div class="grow"></div>
+    <span class="ink2" style="font-size:14px">已登录</span>
+  </div>
+</header>
+
+<main class="wrap">
+  <div class="cols" style="margin-top:0">
+    <form class="form" id="f" novalidate>
+      <h1>写评价</h1>
+      <p class="ink2" style="margin:6px 0 0">写下你用它做了什么、结果怎样。具体的经历比笼统的好坏更有参考价值。<span class="muted">带 <span class="req">*</span> 的为必填。</span></p>
+
+      <div class="picked">
+        <span class="avatar" aria-hidden="true" style="background:#F0E4DA;width:40px;height:40px">C</span>
+        <div style="flex:1;min-width:0"><div style="font-weight:650">Claude</div><div class="muted" style="font-size:13px">通用助手 · 通用 AI</div></div>
+        <a href="index.html" style="font-size:14px">换一个产品</a>
+      </div>
+
+      <fieldset aria-describedby="err-score">
+        <legend>1. 总体评分 <span class="req">*</span></legend>
+        <div class="rate">
+          <label><input type="radio" name="score" value="1"><b>1</b><span>很差</span></label>
+          <label><input type="radio" name="score" value="2"><b>2</b><span>较差</span></label>
+          <label><input type="radio" name="score" value="3"><b>3</b><span>一般</span></label>
+          <label><input type="radio" name="score" value="4"><b>4</b><span>好用</span></label>
+          <label><input type="radio" name="score" value="5"><b>5</b><span>非常好</span></label>
+        </div>
+        <div class="errline"><span class="e" id="err-score"></span></div>
+      </fieldset>
+
+      <fieldset>
+        <legend>2. 使用情况</legend>
+        <p class="muted" style="margin:4px 0 0;font-size:13px">帮助读者判断你的经验是否适用于他们。</p>
+        <div class="grid2">
+          <label class="field">使用的版本（选填）<input type="text" name="plan" placeholder="例如：免费版、Pro 订阅"></label>
+          <label class="field">用了多久（选填）<select name="used"><option value="">请选择</option><option>不到 1 个月</option><option>1–6 个月</option><option>半年以上</option></select></label>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>3. 你的体验</legend>
+        <label class="field">标题（选填）<span class="hint">一句话概括，例如「读老代码很快，写新代码要自己把关」</span><input type="text" name="title"></label>
+        <label class="field" for="body"><span>你用它做了什么、结果怎样 <span class="req">*</span></span></label>
+        <div class="field" style="margin-top:6px"><textarea id="body" name="body" rows="5" aria-describedby="err-body"></textarea></div>
+        <div class="errline"><span class="e" id="err-body"></span><span class="muted num" id="cnt">0 / 30</span></div>
+        <div class="grid2" style="margin-top:18px">
+          <label class="field">好用的地方（选填）<textarea name="pro" rows="3"></textarea></label>
+          <label class="field">不足（选填）<textarea name="con" rows="3"></textarea></label>
+        </div>
+      </fieldset>
+
+      <label class="check"><input type="checkbox" name="honest" aria-describedby="err-honest"><span>这是我自己的真实使用经历，与该产品没有利益关系。<span class="req">*</span></span></label>
+      <div class="errline"><span class="e" id="err-honest"></span></div>
+
+      <div class="alert" id="alert" role="alert" hidden></div>
+      <div class="box" id="ok" role="status" hidden style="margin-top:24px;border-color:#B9D6C4">
+        <div style="font-size:13px;font-weight:600;color:#1E6B47">样稿演示 · 实际会显示「已提交，等待审核」</div>
+        <div style="font-size:17px;font-weight:700;margin-top:4px">谢谢，评价已收到</div>
+        <p class="ink2" style="margin:6px 0 0;font-size:14px">审核通过后会公开显示并计入评分。在此之前，其他人看不到这条评价。（这是样稿，内容没有被发送到任何地方。）</p>
+      </div>
+
+      <div style="display:flex;flex-wrap:wrap;gap:12px;align-items:center;margin-top:16px">
+        <button class="btn primary" type="submit" style="height:46px;padding:0 28px;font-size:15px">提交评价</button>
+        <a href="detail.html" class="ink2" style="font-size:14px">取消</a>
+      </div>
+    </form>
+
+    <aside class="side" style="gap:24px;padding-top:32px">
+      <section class="box" aria-labelledby="h-after">
+        <h2 id="h-after" style="font-size:16px">提交之后</h2>
+        <ol style="margin:12px 0 0;padding-left:20px;font-size:14px;color:#57554F;display:flex;flex-direction:column;gap:8px">
+          <li>评价进入审核，你可以在「我的评价」里看到状态。</li>
+          <li>审核通过后公开显示，并计入产品评分。</li>
+          <li>未通过时会告诉你原因，可修改后重新提交。</li>
+        </ol>
+        <p class="muted" style="margin:12px 0 0;font-size:12px">流程以项目现有审核规则为准。</p>
+      </section>
+      <section aria-labelledby="h-tips">
+        <h2 id="h-tips" style="font-size:16px">怎样写更有用</h2>
+        <ul>
+          <li>说清楚任务：写什么、改什么、查什么。</li>
+          <li>说清楚结果：省了多少事，哪里还要自己补。</li>
+          <li>不足之处同样重要。</li>
+        </ul>
+      </section>
+    </aside>
+  </div>
+
+  <section class="states" aria-labelledby="h-states">
+    <h2 id="h-states">其他状态示例（评审用，不是页面内容）</h2>
+    <div class="sgrid">
+      <div class="box" style="border-color:#E4B9AE"><div class="k" style="color:#A1361F">提交失败</div><div class="h">网络中断，评价没有提交</div><p>你填写的内容还在页面上，可以直接重试。</p><button class="btn" type="button">重新提交</button></div>
+      <div class="box"><div class="k ink2">未登录</div><div class="h">登录后才能写评价</div><p>登录后回到这一页，可以直接继续填写。</p><a class="btn primary" href="#">登录</a></div>
+      <div class="box"><div class="k ink2">已评价过</div><div class="h">你已经评价过 Claude</div><p>每款产品只能提交一条评价，你可以修改原来那条。</p><a class="btn" href="#">修改我的评价</a></div>
+    </div>
+  </section>
+</main>
+
+<script>
+(function(){
+  var f=document.getElementById('f'),body=document.getElementById('body'),cnt=document.getElementById('cnt');
+  function len(){return body.value.trim().length;}
+  body.addEventListener('input',function(){cnt.textContent=len()+' / 30';});
+  f.addEventListener('submit',function(e){
+    e.preventDefault();
+    var errs=[];
+    var score=f.querySelector('input[name=score]:checked');
+    document.getElementById('err-score').textContent=score?'':'请选择一个评分。';
+    if(!score)errs.push(['err-score','还没选评分']);
+    var okBody=len()>=30;
+    document.getElementById('err-body').textContent=okBody?'':'再写具体一点：至少 30 字，说说任务和结果。';
+    body.classList.toggle('bad',!okBody);body.setAttribute('aria-invalid',okBody?'false':'true');
+    if(!okBody)errs.push(['body','体验描述太短']);
+    var h=f.honest.checked;
+    document.getElementById('err-honest').textContent=h?'':'请确认这是你自己的真实经历。';
+    if(!h)errs.push(['err-honest','还没勾选真实性确认']);
+    var a=document.getElementById('alert'),ok=document.getElementById('ok');
+    if(errs.length){
+      a.innerHTML='还有 '+errs.length+' 处需要修改：'+errs.map(function(x){return '<a href="#'+x[0]+'">'+x[1]+'</a>';}).join('、');
+      a.hidden=false;ok.hidden=true;
+    }else{a.hidden=true;ok.hidden=false;ok.scrollIntoView({behavior:'smooth',block:'center'});}
+  });
+})();
+</script>
+</body>
+</html>

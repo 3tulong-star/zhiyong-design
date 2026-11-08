@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>知用 · AI 工具点评（设计样稿）</title>
+<meta name="description" content="知用改版设计样稿。评分与评价为虚构示例。">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="sample">设计样稿：评分与评价为虚构示例，产品信息与公开讨论来自现有站点</div>
+
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="index.html"><b>知用</b><span>AI 工具点评</span></a>
+    <nav class="nav" aria-label="主导航">
+      <a href="#cats">品类</a><a href="#discuss">公开讨论</a><a href="#compare">对比</a><a href="#rules">评分说明</a>
+    </nav>
+    <div class="grow"></div>
+    <label class="search">
+      <svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#6E6B64" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg>
+      <span class="sr">搜索工具</span><input type="search" placeholder="搜索工具名称">
+    </label>
+    <button class="iconbtn" type="button" aria-label="搜索"><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#1A1A17" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg></button>
+    <button class="iconbtn" type="button" aria-label="菜单"><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#1A1A17" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+    <a class="btn primary" href="review.html">写评价</a>
+  </div>
+</header>
+
+<main class="wrap">
+  <section class="hero">
+    <h1>AI 工具的真实使用评价</h1>
+    <p>按任务类型浏览 AI 工具，看用过的人怎么说。评分只来自站内评价；外部文章单独整理，不计入评分。</p>
+    <div class="chips" id="cats">
+      <a class="chip" href="#c-general">通用助手 <span class="num">3</span></a>
+      <a class="chip" href="#c-search">搜索研究 <span class="num">1</span></a>
+      <a class="chip" href="#c-agent">个人 Agent <span class="num">2</span></a>
+    </div>
+  </section>
+
+  <section class="hot" aria-labelledby="h-hot">
+    <div class="sechead">
+      <h2 id="h-hot">热门评价</h2>
+      <span class="sub">每款产品获赞最多的一条</span>
+      <div class="grow"></div>
+      <button type="button" class="btn sm" id="hot-toggle" aria-pressed="false">暂停滚动</button>
+    </div>
+    <div class="marquee-box" id="hot-box">
+      <div class="track">
+        <a class="hcard" href="detail.html"><div><span style="display:flex;align-items:center;gap:8px"><span class="score xs">5.0</span><b style="font-size:14px">Claude</b></span><div class="t">改整份合同和长报告最省心</div><div class="b">主要用来改中英文合同和季度报告。把整份文档连同修改要求一起给它，结构和语气基本一次到位，很少需要返工。</div><div class="m">林晚 · 12 人觉得有帮助</div></div></a>
+        <a class="hcard" href="detail.html"><div><span style="display:flex;align-items:center;gap:8px"><span class="score xs">4.0</span><b style="font-size:14px">ChatGPT</b></span><div class="t">日常查问题和写初稿很顺手</div><div class="b">查问题、写邮件初稿、给孩子讲数学题都用它，回答速度快。复杂任务要多追问几轮才准确。</div><div class="m">小周 · 18 人觉得有帮助</div></div></a>
+        <a class="hcard" href="detail.html"><div><span style="display:flex;align-items:center;gap:8px"><span class="score xs">5.0</span><b style="font-size:14px">Perplexity</b></span><div class="t">查行业资料省掉一半核对时间</div><div class="b">每句话都带来源链接，写调研报告时可以直接点进原文核对。追问很专业的问题时，来源质量参差不齐。</div><div class="m">王一 · 10 人觉得有帮助</div></div></a>
+        <a class="hcard" href="detail.html"><div><span style="display:flex;align-items:center;gap:8px"><span class="score xs">4.0</span><b style="font-size:14px">Gemini</b></span><div class="t">看图和读长视频很强</div><div class="b">把产品演示视频丢进去，能按时间点总结要点。中文长文写作略显生硬，要自己再润色。</div><div class="m">黎川 · 7 人觉得有帮助</div></div></a>
+        <a class="hcard" href="detail.html"><div><span style="display:flex;align-items:center;gap:8px"><span class="score xs">4.0</span><b style="font-size:14px">Grok Bot</b></span><div class="t">能自己跑完一整套流程</div><div class="b">让它在云电脑上登录后台、导出数据、整理成表格，全程不用盯着。中途卡在验证码时不会主动求助。</div><div class="m">Leo · 2 人觉得有帮助</div></div></a>
+        <a class="hcard dup" href="detail.html" aria-hidden="true" tabindex="-1"><div><span style="display:flex;align-items:center;gap:8px"><span class="score xs">5.0</span><b style="font-size:14px">Claude</b></span><div class="t">改整份合同和长报告最省心</div><div class="b">主要用来改中英文合同和季度报告。把整份文档连同修改要求一起给它，结构和语气基本一次到位，很少需要返工。</div><div class="m">林晚 · 12 人觉得有帮助</div></div></a>
+        <a class="hcard dup" href="detail.html" aria-hidden="true" tabindex="-1"><div><span style="display:flex;align-items:center;gap:8px"><span class="score xs">4.0</span><b style="font-size:14px">ChatGPT</b></span><div class="t">日常查问题和写初稿很顺手</div><div class="b">查问题、写邮件初稿、给孩子讲数学题都用它，回答速度快。复杂任务要多追问几轮才准确。</div><div class="m">小周 · 18 人觉得有帮助</div></div></a>
+        <a class="hcard dup" href="detail.html" aria-hidden="true" tabindex="-1"><div><span style="display:flex;align-items:center;gap:8px"><span class="score xs">5.0</span><b style="font-size:14px">Perplexity</b></span><div class="t">查行业资料省掉一半核对时间</div><div class="b">每句话都带来源链接，写调研报告时可以直接点进原文核对。追问很专业的问题时，来源质量参差不齐。</div><div class="m">王一 · 10 人觉得有帮助</div></div></a>
+        <a class="hcard dup" href="detail.html" aria-hidden="true" tabindex="-1"><div><span style="display:flex;align-items:center;gap:8px"><span class="score xs">4.0</span><b style="font-size:14px">Gemini</b></span><div class="t">看图和读长视频很强</div><div class="b">把产品演示视频丢进去，能按时间点总结要点。中文长文写作略显生硬，要自己再润色。</div><div class="m">黎川 · 7 人觉得有帮助</div></div></a>
+        <a class="hcard dup" href="detail.html" aria-hidden="true" tabindex="-1"><div><span style="display:flex;align-items:center;gap:8px"><span class="score xs">4.0</span><b style="font-size:14px">Grok Bot</b></span><div class="t">能自己跑完一整套流程</div><div class="b">让它在云电脑上登录后台、导出数据、整理成表格，全程不用盯着。中途卡在验证码时不会主动求助。</div><div class="m">Leo · 2 人觉得有帮助</div></div></a>
+      </div>
+    </div>
+  </section>
+
+  <div class="cols">
+    <div class="main">
+      <section class="cat" id="c-general" aria-labelledby="h-general">
+        <div class="sechead"><h2 id="h-general">通用助手</h2><span class="sub">3 款 · 按评分排序</span><a class="more" href="#">查看全部 →</a></div>
+        <a class="prow" href="detail.html"><span class="rank">1</span><span class="avatar" aria-hidden="true" style="background:#F0E4DA">C</span><div class="pbody"><div class="pline"><span class="pname">Claude</span><span class="ptype">通用 AI</span></div><div class="pdesc">面向写作、代码与文档工作的 AI 助手。</div></div><div class="pright"><span class="score">4.4</span><span class="pcount num">23 条评价</span></div></a>
+        <a class="prow" href="detail.html"><span class="rank">2</span><span class="avatar" aria-hidden="true" style="background:#E3ECE6">C</span><div class="pbody"><div class="pline"><span class="pname">ChatGPT</span><span class="ptype">通用 AI</span></div><div class="pdesc">用于问答、写作、代码与资料分析的通用 AI 助手。</div></div><div class="pright"><span class="score">4.3</span><span class="pcount num">31 条评价</span></div></a>
+        <a class="prow" href="detail.html"><span class="rank">3</span><span class="avatar" aria-hidden="true" style="background:#E1E7F2">G</span><div class="pbody"><div class="pline"><span class="pname">Gemini</span><span class="ptype">通用 AI</span></div><div class="pdesc">Google 的通用 AI 助手，支持文本与多模态任务。</div></div><div class="pright"><span class="score">3.9</span><span class="pcount num">14 条评价</span></div></a>
+      </section>
+
+      <section class="cat" id="c-search" aria-labelledby="h-search">
+        <div class="sechead"><h2 id="h-search">搜索研究</h2><span class="sub">1 款 · 按评分排序</span><a class="more" href="#">查看全部 →</a></div>
+        <a class="prow" href="detail.html"><span class="rank">1</span><span class="avatar" aria-hidden="true" style="background:#E0EEEE">P</span><div class="pbody"><div class="pline"><span class="pname">Perplexity</span><span class="ptype">AI 搜索</span></div><div class="pdesc">以搜索和来源引用为核心的 AI 问答工具。</div></div><div class="pright"><span class="score">4.1</span><span class="pcount num">12 条评价</span></div></a>
+      </section>
+
+      <section class="cat" id="c-agent" aria-labelledby="h-agent">
+        <div class="sechead"><h2 id="h-agent">个人 Agent</h2><span class="sub">2 款 · 按评分排序</span><a class="more" href="#">查看全部 →</a></div>
+        <a class="prow" href="detail.html"><span class="rank">1</span><span class="avatar" aria-hidden="true" style="background:#E6E6E3">G</span><div class="pbody"><div class="pline"><span class="pname">Grok Bot</span><span class="ptype">云电脑 · 常驻 Agent</span></div><div class="pdesc">拥有云电脑的常驻 AI agent。区别于 Grok 聊天产品。</div></div><div class="pright"><span class="score">3.5</span><span class="pcount num">2 条评价</span><span class="tag-warn">样本较少</span></div></a>
+        <div class="unrated-label">暂无评分 · 还没有站内评价，不参与排序</div>
+        <a class="prow unrated" href="detail.html"><span class="rank"></span><span class="avatar" aria-hidden="true" style="background:#E8E3F0">M</span><div class="pbody"><div class="pline"><span class="pname">Muse</span><span class="ptype">Meta · 个人 Agent</span></div><div class="pdesc">Meta 的个人 AI agent，面向持续任务与日常协助。</div><div class="muted" style="font-size:13px;margin-top:6px">2 篇公开讨论 · 欢迎写第一条评价</div></div><div class="pright"><span class="noscore">暂无评分</span></div></a>
+      </section>
+    </div>
+
+    <aside class="side">
+      <section id="discuss" aria-labelledby="h-discuss">
+        <h2 id="h-discuss">公开讨论</h2>
+        <p class="note">编辑整理的外部文章，保留原文链接与内容披露，不计入评分。</p>
+        <ol class="srcs">
+          <li><div class="meta"><span>Grok Bot · 编辑整理</span><span class="num">2026-10-25</span></div><a class="name" href="#">Zenn</a><div class="tags"><span class="tag-warn">含付费书推广</span></div></li>
+          <li><div class="meta"><span>Grok Bot / Muse · 编辑整理</span><span class="num">2026-10-23</span></div><a class="name" href="#">Helmut Hahn Datenschutz und IT-Seminare</a><div class="tags"><span class="tag-warn">原文披露 AI 辅助写作</span><span class="tag-warn">非亲身测评</span></div></li>
+          <li><div class="meta"><span>Grok Bot / Muse · 编辑整理</span><span class="num">2026-10-08</span></div><a class="name" href="#">Paulo Cauhi / LEARN</a><div class="tags"><span class="tag-warn">含邮件获客</span><span class="tag-warn">可用性信息可能过期</span><span class="tag-warn">非亲身测试</span></div></li>
+        </ol>
+        <a href="#" style="font-size:14px;text-decoration:none">查看全部 4 篇 →</a>
+      </section>
+
+      <section id="compare" class="box" aria-labelledby="h-compare">
+        <div class="muted" style="font-size:13px">对比</div>
+        <h2 id="h-compare" style="margin-top:2px">Muse 与 Grok Bot 有什么不同</h2>
+        <p class="ink2" style="margin:6px 0 12px;font-size:14px">比较两款个人 Agent 的产品定位、评价样本与讨论来源。</p>
+        <a href="#" style="font-size:14px;font-weight:600;text-decoration:none">打开对比 →</a>
+      </section>
+
+      <section id="rules" aria-labelledby="h-rules">
+        <h2 id="h-rules">评分怎么来</h2>
+        <ul>
+          <li>评分只统计站内用户提交的评价。</li>
+          <li>评价由使用者主动投稿，目前未做独立核验。</li>
+          <li>评价较少的产品会标注「样本较少」。</li>
+        </ul>
+        <a href="#" style="display:inline-block;margin-top:10px;font-size:14px;text-decoration:none">完整评分与数据规则 →</a>
+      </section>
+    </aside>
+  </div>
+</main>
+
+<footer class="foot">
+  <div class="wrap">
+    <b style="color:#1A1A17">知用</b><a href="#">评分说明</a><a href="#">数据规则</a>
+    <div class="grow"></div>
+    <span class="owner">仅管理员可见 · 私有内测 · 上次读取 2026/11/8 17:11 <button type="button" class="linkbtn">刷新数据</button></span>
+  </div>
+</footer>
+<div class="mbar"><a class="btn primary" href="review.html">写评价</a></div>
+
+<script>
+(function(){
+  var b=document.getElementById('hot-toggle'),box=document.getElementById('hot-box');
+  b.addEventListener('click',function(){
+    var p=box.classList.toggle('paused');
+    b.setAttribute('aria-pressed',p?'true':'false');
+    b.textContent=p?'继续滚动':'暂停滚动';
+  });
+})();
+</script>
+</body>
+</html>
