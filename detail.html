@@ -7,7 +7,7 @@
 <title>Claude 评价 · 知用（设计样稿）</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@700;900&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@700;900&amp;family=Source+Serif+4:opsz,wght@8..60,700;8..60,900&amp;display=swap">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -15,10 +15,8 @@
 <header class="mast">
   <div class="wrap">
     <a class="logo" href="index.html"><b>知用</b><span>AI 工具点评</span></a>
-    <nav class="nav" aria-label="主导航">
-      <a href="index.html">榜单</a><a href="#">公开讨论</a><a href="#">对比</a><a href="#">评分说明</a>
-    </nav>
     <div class="grow"></div>
+    <a class="lang" href="en/detail.html" lang="en">EN</a>
     <button class="icon-btn" type="button" aria-label="搜索工具"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg></button>
     <a class="btn solid d-only" href="review.html">写评价</a>
   </div>
@@ -35,7 +33,6 @@
       <div class="actions">
         <a class="btn solid" href="review.html">写评价</a>
         <a class="btn" href="https://claude.ai/" rel="noopener" target="_blank">访问官网<svg class="i" viewBox="0 0 24 24" aria-hidden="true" style="width:14px;height:14px"><path d="M7 17L17 7M9 7h8v8"/></svg></a>
-        <button class="btn" type="button">加入对比</button>
       </div>
     </div>
     <div class="summary">
@@ -65,35 +62,35 @@
       <div id="reviews">
         <article class="review" data-i="1" data-s="5" data-h="12">
           <div class="hd"><span class="rs" aria-label="5 分，满分 5 分">5.0</span><h3>改整份合同和长报告最省心</h3></div>
-          <div class="meta"><b>林晚</b><span>Pro 订阅</span><span>已使用 5 个月</span><span class="num">2026-11-02</span></div>
+          <div class="meta"><span>林晚</span><span>Pro 订阅</span><span>已使用 5 个月</span><span class="num">2026-11-02</span></div>
           <p>主要用来改中英文合同和季度报告。把整份文档连同修改要求一起给它，结构和语气基本一次到位，很少需要返工。</p>
           <dl class="pc"><div><dt class="pro">好用的地方</dt><dd>长文档前后一致；改写能保留原意。</dd></div><div><dt class="con">不足</dt><dd>高峰期偶尔限速；不能直接读在线表格。</dd></div></dl>
           <button class="btn sm" type="button">有帮助 · 12</button>
         </article>
         <article class="review" data-i="2" data-s="4" data-h="9">
           <div class="hd"><span class="rs" aria-label="4 分，满分 5 分">4.0</span><h3>读老代码很快，写新代码要自己把关</h3></div>
-          <div class="meta"><b>周屿</b><span>Pro 订阅</span><span>已使用 3 个月</span><span class="num">2026-10-28</span></div>
+          <div class="meta"><span>周屿</span><span>Pro 订阅</span><span>已使用 3 个月</span><span class="num">2026-10-28</span></div>
           <p>接手一个没人维护的老项目，让它读代码、讲清调用关系，比我自己翻快很多。直接写新功能时偶尔会引用不存在的函数，需要跑测试确认。</p>
           <dl class="pc"><div><dt class="pro">好用的地方</dt><dd>解释代码清楚；会主动说明假设。</dd></div><div><dt class="con">不足</dt><dd>偶尔编造不存在的接口。</dd></div></dl>
           <button class="btn sm" type="button">有帮助 · 9</button>
         </article>
         <article class="review" data-i="3" data-s="3" data-h="6">
           <div class="hd"><span class="rs" aria-label="3 分，满分 5 分">3.0</span><h3>整理资料可以，查最新信息要另找工具</h3></div>
-          <div class="meta"><b>阿 Kai</b><span>免费版</span><span>已使用 1 个月</span><span class="num">2026-10-20</span></div>
+          <div class="meta"><span>阿 Kai</span><span>免费版</span><span>已使用 1 个月</span><span class="num">2026-10-20</span></div>
           <p>上传的 PDF 归纳得很准，但问到最近的行业新闻时信息不够新，还是要去搜索工具里核对。免费额度用得很快。</p>
           <dl class="pc"><div><dt class="pro">好用的地方</dt><dd>归纳上传文件准确。</dd></div><div><dt class="con">不足</dt><dd>免费额度少；最新资讯要另外核实。</dd></div></dl>
           <button class="btn sm" type="button">有帮助 · 6</button>
         </article>
         <article class="review" data-i="4" data-s="5" data-h="4">
           <div class="hd"><span class="rs" aria-label="5 分，满分 5 分">5.0</span><h3>写周报和对外邮件的固定搭档</h3></div>
-          <div class="meta"><b>陈默</b><span>Pro 订阅</span><span>已使用 8 个月</span><span class="num">2026-10-11</span></div>
+          <div class="meta"><span>陈默</span><span>Pro 订阅</span><span>已使用 8 个月</span><span class="num">2026-10-11</span></div>
           <p>每周把零散的工作记录丢给它，生成的周报只需要改几个数字。写给客户的英文邮件语气拿捏得比我自己写的自然。</p>
           <dl class="pc"><div><dt class="pro">好用的地方</dt><dd>语气得体；能按要求压缩长度。</dd></div><div><dt class="con">不足</dt><dd>偶尔过于客气，要手动删掉套话。</dd></div></dl>
           <button class="btn sm" type="button">有帮助 · 4</button>
         </article>
         <article class="review" data-i="5" data-s="4" data-h="3">
           <div class="hd"><span class="rs" aria-label="4 分，满分 5 分">4.0</span><h3>写小脚本处理表格数据</h3></div>
-          <div class="meta"><b>Mia</b><span>Team</span><span>已使用 2 个月</span><span class="num">2026-09-30</span></div>
+          <div class="meta"><span>Mia</span><span>Team</span><span>已使用 2 个月</span><span class="num">2026-09-30</span></div>
           <p>不太会编程，让它写 Python 脚本合并几十个 Excel 文件。第一版跑不通，把报错贴回去后第二版就能用了。</p>
           <dl class="pc"><div><dt class="pro">好用的地方</dt><dd>会解释每一步在做什么。</dd></div><div><dt class="con">不足</dt><dd>需要自己会运行脚本。</dd></div></dl>
           <button class="btn sm" type="button">有帮助 · 3</button>
@@ -108,11 +105,6 @@
         <p class="note">来自产品方，不是用户评价</p>
         <dl class="kv"><dt>介绍</dt><dd>面向写作、代码与文档工作的 AI 助手。</dd><dt>类型</dt><dd>通用 AI</dd><dt>官网</dt><dd><a href="https://claude.ai/" rel="noopener" target="_blank">claude.ai</a></dd></dl>
       </section>
-      <section aria-labelledby="h-pub">
-        <h2 id="h-pub">公开讨论</h2>
-        <p class="note">编辑整理的外部文章，不计入评分</p>
-        <p class="empty">还没有整理过关于 Claude 的公开讨论。</p>
-      </section>
       <section aria-labelledby="h-same">
         <h2 id="h-same">同榜单</h2>
         <ul class="same">
@@ -125,7 +117,7 @@
   </div>
 </main>
 
-<footer class="foot"><div class="wrap"><a class="logo" href="index.html"><b>知用</b></a><a href="#">公开讨论</a><a href="#">对比</a><a href="#">评分说明</a><a href="#">数据规则</a></div></footer>
+<footer class="foot"><div class="wrap"><a class="logo" href="index.html"><b>知用</b></a></div></footer>
 <div class="mbar"><a class="btn solid" href="review.html">写评价</a></div>
 
 <script>
