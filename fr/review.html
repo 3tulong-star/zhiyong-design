@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Écrire un avis · Zhiyong (maquette)</title>
+<link rel="alternate" hreflang="zh-CN" href="../review.html">
+<link rel="alternate" hreflang="en" href="../en/review.html">
+<link rel="alternate" hreflang="es" href="../es/review.html">
+<link rel="alternate" hreflang="pt-BR" href="../pt/review.html">
+<link rel="alternate" hreflang="fr" href="../fr/review.html">
+<link rel="alternate" hreflang="de" href="../de/review.html">
+<link rel="alternate" hreflang="ja" href="../ja/review.html">
+<link rel="alternate" hreflang="ko" href="../ko/review.html">
+<link rel="alternate" hreflang="ar" href="../ar/review.html">
+<link rel="alternate" hreflang="id" href="../id/review.html">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@700;900&amp;family=Source+Serif+4:opsz,wght@8..60,700;8..60,900&amp;display=swap">
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<div class="sample">Maquette · Ce formulaire n’envoie rien. Les champs, la connexion et la modération réels suivent le projet existant</div>
+<header class="mast">
+  <div class="wrap">
+    <a class="logo" href="index.html"><b>知用</b><span>Avis sur les outils d’IA</span></a>
+    <div class="grow"></div>
+    <details class="langs"><summary aria-label="Language · 语言"><svg class="i" viewBox="0 0 24 24" aria-hidden="true" style="width:15px;height:15px"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.7 3.8 5.7 3.8 9s-1.3 6.3-3.8 9c-2.5-2.7-3.8-5.7-3.8-9S9.5 5.7 12 3z"/></svg><span>FR</span></summary><ul><li><a href="../review.html" lang="zh-CN" hreflang="zh-CN">简体中文</a></li><li><a href="../en/review.html" lang="en" hreflang="en">English</a></li><li><a href="../es/review.html" lang="es" hreflang="es">Español</a></li><li><a href="../pt/review.html" lang="pt-BR" hreflang="pt-BR">Português</a></li><li><a href="../fr/review.html" lang="fr" hreflang="fr" aria-current="page">Français</a></li><li><a href="../de/review.html" lang="de" hreflang="de">Deutsch</a></li><li><a href="../ja/review.html" lang="ja" hreflang="ja">日本語</a></li><li><a href="../ko/review.html" lang="ko" hreflang="ko">한국어</a></li><li><a href="../ar/review.html" lang="ar" hreflang="ar">العربية</a></li><li><a href="../id/review.html" lang="id" hreflang="id">Bahasa Indonesia</a></li></ul></details>
+    <span class="ink2" style="font-size:14px">Connecté</span>
+  </div>
+</header>
+
+<main class="wrap">
+  <div class="fcols">
+    <form class="form" id="f" novalidate>
+      <h1>Écrire un avis</h1>
+      <p class="ink2" style="margin:8px 0 0">Dites à quoi il vous a servi et comment ça s’est passé. Une expérience concrète aide plus qu’un avis général. Les champs marqués d’un <span class="req">*</span> sont obligatoires.</p>
+
+      <div class="picked"><b>Claude</b><span class="muted" style="font-size:13px">Assistants généralistes · IA généraliste</span><span class="grow"></span><a href="index.html" style="font-size:14px">Changer</a></div>
+
+      <fieldset aria-describedby="err-score">
+        <legend>Note globale <span class="req">*</span></legend>
+        <div class="rate">
+          <label><input type="radio" name="score" value="1"><b>1</b><span>Mauvais</span></label>
+          <label><input type="radio" name="score" value="2"><b>2</b><span>Faible</span></label>
+          <label><input type="radio" name="score" value="3"><b>3</b><span>Correct</span></label>
+          <label><input type="radio" name="score" value="4"><b>4</b><span>Bien</span></label>
+          <label><input type="radio" name="score" value="5"><b>5</b><span>Excellent</span></label>
+        </div>
+        <div class="errline"><span class="e" id="err-score"></span></div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Votre usage</legend>
+        <p class="muted" style="margin:2px 0 0;font-size:13px">Aide les lecteurs à savoir si votre expérience les concerne.</p>
+        <div class="grid2">
+          <label class="field">Offre (facultatif)<input type="text" name="plan" placeholder="ex. Gratuit, Pro"></label>
+          <label class="field">Durée d’utilisation (facultatif)<select name="used"><option value="">Choisir</option><option>Moins d’un mois</option><option>1 à 6 mois</option><option>Plus de 6 mois</option></select></label>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Votre expérience</legend>
+        <label class="field">Titre (facultatif)<span class="hint">Une ligne, ex. « Rapide pour lire du vieux code ; le nouveau, vérifiez-le vous-même »</span><input type="text" name="title"></label>
+        <label class="field" for="body"><span>À quoi vous a-t-il servi, et comment ça s’est passé ? <span class="req">*</span></span></label>
+        <div class="field" style="margin-top:6px"><textarea id="body" name="body" rows="5" aria-describedby="err-body"></textarea></div>
+        <div class="errline"><span class="e" id="err-body"></span><span class="muted num" id="cnt">0 / 80</span></div>
+        <div class="grid2" style="margin-top:14px">
+          <label class="field">Points forts (facultatif)<textarea name="pro" rows="3"></textarea></label>
+          <label class="field">Points faibles (facultatif)<textarea name="con" rows="3"></textarea></label>
+        </div>
+      </fieldset>
+
+      <label class="check"><input type="checkbox" name="honest" aria-describedby="err-honest"><span>Il s’agit de ma propre expérience et je n’ai aucun lien avec ce produit. <span class="req">*</span></span></label>
+      <div class="errline"><span class="e" id="err-honest"></span></div>
+
+      <div class="alert" id="alert" role="alert" hidden></div>
+      <div class="ok" id="ok" role="status" hidden>
+        <div class="k">Démo de la maquette · le vrai site afficherait « Envoyé, en attente de validation »</div>
+        <h2>Merci, nous avons bien reçu votre avis</h2>
+        <p>Une fois validé, il sera publié et comptera dans la note. D’ici là, personne d’autre ne peut le voir. (Ceci est une maquette ; rien n’a été envoyé.)</p>
+      </div>
+
+      <div style="display:flex;flex-wrap:wrap;gap:16px;align-items:center;margin-top:20px">
+        <button class="btn solid" type="submit" style="height:48px;padding:0 32px;font-size:15px">Publier l’avis</button>
+        <a href="detail.html" class="ink2" style="font-size:14px">Annuler</a>
+      </div>
+    </form>
+
+    <aside class="faside">
+      <section aria-labelledby="h-after">
+        <h2 id="h-after">Après l’envoi</h2>
+        <ol>
+          <li>Votre avis est modéré. Vous pouvez le suivre dans « Mes avis ».</li>
+          <li>Une fois validé, il est publié et compte dans la note.</li>
+          <li>S’il n’est pas validé, nous vous dirons pourquoi et vous pourrez le modifier et le renvoyer.</li>
+        </ol>
+        <p class="muted" style="margin:10px 0 0;font-size:12.5px">Le processus exact suit les règles de modération actuelles du projet.</p>
+      </section>
+      <section aria-labelledby="h-tips">
+        <h2 id="h-tips">Écrire un avis utile</h2>
+        <ul>
+          <li>Nommez la tâche : ce que vous avez écrit, corrigé ou recherché.</li>
+          <li>Nommez le résultat : ce que ça vous a fait gagner, et ce qu’il vous restait à faire.</li>
+          <li>Les défauts comptent autant que les qualités.</li>
+        </ul>
+      </section>
+    </aside>
+  </div>
+
+  <section class="states" aria-labelledby="h-states">
+    <h2 id="h-states">Autres états (pour relecture, hors contenu de la page)</h2>
+    <div class="sgrid">
+      <div><div class="k err">Échec de l’envoi</div><h3>Connexion perdue, avis non envoyé</h3><p>Tout ce que vous avez écrit est toujours sur la page. Vous pouvez réessayer.</p><button class="btn" type="button">Réessayer</button></div>
+      <div><div class="k">Déconnecté</div><h3>Connectez-vous pour écrire un avis</h3><p>Après connexion, vous reviendrez ici et pourrez continuer à écrire.</p><a class="btn solid" href="#">Se connecter</a></div>
+      <div><div class="k">Déjà évalué</div><h3>Vous avez déjà donné votre avis sur Claude</h3><p>Un avis par personne et par produit. Vous pouvez modifier le vôtre.</p><a class="btn" href="#">Modifier mon avis</a></div>
+    </div>
+  </section>
+</main>
+
+<script>
+(function(){
+  var MIN=80,f=document.getElementById('f'),body=document.getElementById('body'),cnt=document.getElementById('cnt');
+  function len(){return body.value.trim().length;}
+  body.addEventListener('input',function(){cnt.textContent=len()+' / '+MIN;});
+  f.addEventListener('submit',function(e){
+    e.preventDefault();
+    var errs=[];
+    var score=f.querySelector('input[name=score]:checked');
+    document.getElementById('err-score').textContent=score?'':"Choisissez une note.";
+    if(!score)errs.push(['err-score',"aucune note choisie"]);
+    var okBody=len()>=MIN;
+    document.getElementById('err-body').textContent=okBody?'':"Ajoutez un peu de détail : au moins 80 caractères sur la tâche et le résultat.";
+    body.classList.toggle('bad',!okBody);body.setAttribute('aria-invalid',okBody?'false':'true');
+    if(!okBody)errs.push(['body',"avis trop court"]);
+    var h=f.honest.checked;
+    document.getElementById('err-honest').textContent=h?'':"Confirmez qu’il s’agit de votre propre expérience.";
+    if(!h)errs.push(['err-honest',"confirmation non cochée"]);
+    var a=document.getElementById('alert'),ok=document.getElementById('ok');
+    if(errs.length){
+      a.innerHTML="À corriger ({n}) : ".replace('{n}',errs.length)+errs.map(function(x){return '<a href="#'+x[0]+'">'+x[1]+'</a>';}).join(', ');
+      a.hidden=false;ok.hidden=true;
+    }else{a.hidden=true;ok.hidden=false;ok.scrollIntoView({behavior:'smooth',block:'center'});}
+  });
+})();
+</script>
+</body>
+</html>
