@@ -67,6 +67,8 @@ svg.i{width:18px;height:18px;fill:none;stroke:currentColor;stroke-width:1.8;stro
 .rk{font-family:var(--serif);font-weight:900;font-size:24px;line-height:1;padding-top:1px;color:var(--ink3);font-variant-numeric:tabular-nums lining-nums}
 .row.top .rk{color:var(--red)}
 .nl{display:flex;align-items:baseline;gap:8px;min-width:0}
+.pi{width:20px;height:20px;border-radius:5px;background:var(--white);box-shadow:0 0 0 1px var(--rule);object-fit:contain;flex-shrink:0;align-self:center}
+.pi-lg{width:44px;height:44px;border-radius:10px;background:var(--white);box-shadow:0 0 0 1px var(--rule);object-fit:contain;vertical-align:-6px;margin-right:14px}
 .nm{font-weight:650;font-size:16px;line-height:1.35;text-decoration:none;overflow-wrap:anywhere}
 .nm:hover{text-decoration:underline;color:var(--ink)}
 .ty{font-size:12px;color:var(--ink3);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;min-width:0}
