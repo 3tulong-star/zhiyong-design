@@ -28,6 +28,8 @@ svg.i{width:18px;height:18px;fill:none;stroke:currentColor;stroke-width:1.8;stro
 .mast{border-bottom:1px solid var(--rule-strong)}
 .mast .wrap{display:flex;align-items:center;gap:32px;height:72px}
 .logo{display:flex;align-items:baseline;gap:10px;text-decoration:none}
+.logo .mark{width:26px;height:26px;align-self:center;flex-shrink:0;margin-right:-2px}
+.foot .logo .mark{width:20px;height:20px}
 .logo b{font-family:var(--serif);font-weight:900;font-size:28px;letter-spacing:.04em}
 .logo span{font-size:13px;color:var(--ink3)}
 .nav{display:flex;gap:26px;font-size:15px}
@@ -210,6 +212,7 @@ legend{font-family:var(--serif);font-weight:900;font-size:19px;padding:0}
   .wrap{padding:0 16px}
   .mast .wrap{height:58px;gap:8px}
   .logo b{font-size:24px}
+  .logo .mark{width:22px;height:22px}
   .nav,.d-only{display:none}
   .m-only{display:inline-flex}
   .title{padding:20px 0 0}
