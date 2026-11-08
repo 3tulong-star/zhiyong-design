@@ -70,9 +70,14 @@ svg.i{width:18px;height:18px;fill:none;stroke:currentColor;stroke-width:1.8;stro
 .ty{font-size:12px;color:var(--ink3);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;min-width:0}
 .sc{text-align:right;line-height:1.1;padding-top:1px}
 .sc b{display:block;font-family:var(--serif);font-weight:900;font-size:22px;font-variant-numeric:tabular-nums lining-nums}
+/* out-of-5 suffix: muted, so the score itself stays the focus */
+.sc b::after,.review .rs::after,.big::after{content:"/5";font-family:var(--sans);font-weight:400;color:var(--ink3);letter-spacing:0}
+.sc b::after{font-size:12px;margin-left:2px}
+.review .rs::after{font-size:12px;margin-left:2px}
+.big::after{font-size:20px;margin-left:4px}
 .sc span{display:block;font-size:12px;color:var(--ink3);margin-top:4px;white-space:nowrap}
 .few{display:block;font-size:11.5px;color:var(--red-ink);margin-top:2px;white-space:nowrap}
-.hot{position:relative;height:3.2em;margin-top:5px;font-size:13.5px;line-height:1.6;color:var(--ink2)}
+.hot{position:relative;height:3.2em;margin-top:5px;font-size:12.5px;line-height:1.6;color:var(--ink2)}
 .hot p{position:absolute;inset:0;margin:0;opacity:0;transform:translateY(4px);transition:opacity .5s cubic-bezier(.16,1,.3,1),transform .5s cubic-bezier(.16,1,.3,1);display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
 .hot p.on{opacity:1;transform:none}
 .hot p::before{content:"“";font-family:var(--serif);font-weight:900;color:var(--red)}
@@ -123,12 +128,12 @@ select,input,textarea{accent-color:var(--ink)}
 .listbar select{height:34px;padding:0 8px;border:1px solid var(--rule);border-radius:2px;background:var(--paper);font:inherit;font-size:14px;color:var(--ink)}
 .review{padding:24px 0;border-bottom:1px solid var(--rule)}
 .review .hd{display:flex;align-items:baseline;gap:14px}
-.review .rs{font-family:var(--serif);font-weight:900;font-size:22px;line-height:1;font-variant-numeric:tabular-nums lining-nums;flex-shrink:0}
+.review .rs{font-family:var(--serif);font-weight:900;font-size:20px;line-height:1;font-variant-numeric:tabular-nums lining-nums;flex-shrink:0}
 .review .rs small{font-size:12px;color:var(--ink3);font-family:var(--sans);font-weight:400}
-.review h3{font-size:18px;font-weight:700}
+.review h3{font-size:16px;font-weight:700}
 .review .meta{display:flex;flex-wrap:wrap;gap:2px 14px;margin-top:8px;font-size:13px;color:var(--ink3)}
 .review .meta b{color:var(--ink);font-weight:600}
-.review p{margin:10px 0 0;max-width:38em;font-size:15.5px}
+.review p{margin:8px 0 0;max-width:40em;font-size:14px;line-height:1.75}
 .pc{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:8px 32px;margin-top:14px;font-size:14px;max-width:44em}
 .pc dt{font-weight:600;font-size:13px}
 .pc dt.pro{color:var(--ink)}.pc dt.con{color:var(--red-ink)}
